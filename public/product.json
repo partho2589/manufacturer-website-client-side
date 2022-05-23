@@ -2,39 +2,50 @@
     {
         "name": "RAM",
         "price": 300,
-        "availableQuantity":20000,
-        " minimumOrderQuantity ":100,
+        "availableQuantity":2000,
+        "minimumOrderQuantity":100,
         "description": "Random access memory (RAM) is a computer's short-term memory, which it uses to handle all active tasks and apps. None of your programs, files, games, or streams would work without RAM.",
         "img": "https://i.ibb.co/h2rvGkn/ram.jpg"
     },
     {
-        "name": "Apple",
-        "price": 200,
-        "description": " The apple is a pome (fleshy) fruit, in which the ripened ovary and surrounding tissue both become fleshy and edible.",
-        "img": "https://ibb.co/Rj0WqF8"
-    },
-    {
-        "name": "Grapes",
-        "price": 250,
-        "description": "Grapes are fleshy, rounded fruits that grow in clusters made up of many fruits of greenish, yellowish or purple skin.",
-        "img": "https://ibb.co/FKppCTg"
-    },
-    {
-        "name": "Mango",
+        "name": "ROM",
         "price": 400,
-        "description": "A mango is a sweet tropical fruit, and it's also the name of the trees on which the fruit grows.",
-        "img": "https://ibb.co/FKppCTghttps://ibb.co/1sfddr3"
+        "availableQuantity":1800,
+        "minimumOrderQuantity":100,
+        "description": "Read-only memory (ROM) is a type of storage medium that permanently stores data on personal computers (PCs) and other electronic devices. It contains the programming needed to start a PC, which is essential for boot-up; it performs major input/output tasks and holds programs or software instructions.",
+        "img": "https://i.ibb.co/n8T0YTg/rom.jpg"
     },
     {
-        "name": "Orange",
+        "name": "CMOS Battery",
+        "price": 200,
+        "availableQuantity":3000,
+        "minimumOrderQuantity":150,
+        "description": "The CMOS battery powers your laptop's BIOS firmware, which is responsible for booting up your computer and configuring data flow. You can tell if your CMOS battery has died if your laptop has difficult booting up, if drivers disappear, and if your laptop's date and time are incorrect.",
+        "img": "https://i.ibb.co/gyZ9SXN/battery.jpg"
+    },
+    {
+        "name": "DVD DRIVE",
+        "price": 300,
+        "availableQuantity":1900,
+        "minimumOrderQuantity":120,
+        "description": "In computing, an optical disc drive (ODD) is a disc drive that uses laser light or electromagnetic waves within or near the visible light spectrum as part of the process of reading or writing data to or from optical discs.",
+        "img": "https://i.ibb.co/3BswjKj/dvd.jpg"
+    },
+    {
+        "name": "USB",
+        "price": 200,
+        "availableQuantity":4000,
+        "minimumOrderQuantity":300,
+        "description": " A hardware interface that supports up to 127 peripherals. USB is used to attach keyboards, mice, printers, external storage and mobile devices to the computer. It is also used for charging portable products (see USB power).",
+        "img": "https://i.ibb.co/VQwQxxR/USB.jpg"
+    },
+    {
+        "name": "Power Button",
         "price": 100,
-        "description": "The orange is a usually round or oval citrus; its rind and flesh are generally orange, except the varieties of red pulp.",
-        "img": "https://ibb.co/r47hRzJ"
-    },
-    {
-        "name": "Pineapple",
-        "price": 150,
-        "description": "Pineapples have yellow or white pulp, fleshy, aromatic, juicy and sweet. In the fruit there is a fibrous axis that extends from the crown to the pedicle.",
-        "img": "https://ibb.co/Xy7pq4Q"
+        "availableQuantity":4500,
+        "minimumOrderQuantity":300,
+        "description": "The power button has a cable, which is connected to two pins on the motherboard. By pressing the power button, a circuit is closed on the mainboard. At that moment, the power supply receives the signal to supply the computer with power and thus start up.",
+        "img": "https://i.ibb.co/f83xgH0/power.jpg"
     }
+    
 ]
