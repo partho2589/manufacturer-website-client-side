@@ -1,10 +1,8 @@
 import React from 'react';
 
-const CommonButton = () => {
+const CommonButton = ({children}) => {
     return (
-        <div>
-            <button></button>
-        </div>
+        <button className="btn  uppercase text-white font-bold bg-primary">{children}</button>
     );
 };
 
