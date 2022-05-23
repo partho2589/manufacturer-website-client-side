@@ -1,0 +1,40 @@
+[
+    {
+        "name": "RAM",
+        "price": 300,
+        "availableQuantity":20000,
+        " minimumOrderQuantity ":100,
+        "description": "Random access memory (RAM) is a computer's short-term memory, which it uses to handle all active tasks and apps. None of your programs, files, games, or streams would work without RAM.",
+        "img": "https://i.ibb.co/h2rvGkn/ram.jpg"
+    },
+    {
+        "name": "Apple",
+        "price": 200,
+        "description": " The apple is a pome (fleshy) fruit, in which the ripened ovary and surrounding tissue both become fleshy and edible.",
+        "img": "https://ibb.co/Rj0WqF8"
+    },
+    {
+        "name": "Grapes",
+        "price": 250,
+        "description": "Grapes are fleshy, rounded fruits that grow in clusters made up of many fruits of greenish, yellowish or purple skin.",
+        "img": "https://ibb.co/FKppCTg"
+    },
+    {
+        "name": "Mango",
+        "price": 400,
+        "description": "A mango is a sweet tropical fruit, and it's also the name of the trees on which the fruit grows.",
+        "img": "https://ibb.co/FKppCTghttps://ibb.co/1sfddr3"
+    },
+    {
+        "name": "Orange",
+        "price": 100,
+        "description": "The orange is a usually round or oval citrus; its rind and flesh are generally orange, except the varieties of red pulp.",
+        "img": "https://ibb.co/r47hRzJ"
+    },
+    {
+        "name": "Pineapple",
+        "price": 150,
+        "description": "Pineapples have yellow or white pulp, fleshy, aromatic, juicy and sweet. In the fruit there is a fibrous axis that extends from the crown to the pedicle.",
+        "img": "https://ibb.co/Xy7pq4Q"
+    }
+]
