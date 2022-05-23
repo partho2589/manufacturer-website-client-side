@@ -7,10 +7,12 @@ import Navbar from './Pages/Home/Navbar';
 import Login from './Pages/Login/Login';
 import Purchase from './Pages/Purchase/Purchase';
 import NotFound from './Pages/Shared/NotFound';
+import { ToastContainer } from 'react-toastify';
+import SignUp from './Pages/Login/SignUp';
 
 function App() {
   return (
-    <div className='bg-red bg-pink-100'>
+    <div>
       <Navbar></Navbar>
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
@@ -18,8 +20,10 @@ function App() {
         <Route path='/purchase' element={<Purchase></Purchase>}></Route>
         <Route path='/blog' element={<Blog></Blog>}></Route>
         <Route path='/login' element={<Login/>}></Route>
+        <Route path='/signup' element={<SignUp/>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
+      <ToastContainer />
     </div>
   );
 }
