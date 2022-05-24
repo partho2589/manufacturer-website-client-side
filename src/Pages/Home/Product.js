@@ -18,7 +18,7 @@ const Product = ({ product }) => {
                 <p><span>Minimum Order Quantity: {minimumOrderQuantity}</span></p>
                 <p className='text-sm'>{description}</p>
                 <div className="card-actions">
-                <button onClick={() =>navigateByNow(_id)} class="btn btn-success">By Now</button>
+                <button onClick={() =>navigateByNow(_id)} className="btn btn-success">By Now</button>
                 </div>
             </div>
         </div>
