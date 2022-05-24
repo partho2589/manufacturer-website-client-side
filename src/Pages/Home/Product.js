@@ -1,7 +1,11 @@
 import React from 'react'
-import CommonButton from '../Shared/CommonButton';
+import { useNavigate } from 'react-router-dom';
 const Product = ({ product }) => {
-    const {name,img, price,availableQuantity,minimumOrderQuantity,description} = product;
+    const { _id, name,img, price,availableQuantity,minimumOrderQuantity,description} = product;
+    const navigate = useNavigate()
+    const navigateByNow = (_id) => {
+        navigate(`product/${_id}`)
+    }
     return (
         <div className="card lg:max-w-lg bg-base-100 shadow-xl">
             <figure className="px-10 pt-10">
@@ -12,9 +16,9 @@ const Product = ({ product }) => {
                 <p><span>Price: ${price}</span></p>
                 <p><span>Available Quantity: {availableQuantity}</span></p>
                 <p><span>Minimum Order Quantity: {minimumOrderQuantity}</span></p>
-                <p>{description}</p>
+                <p className='text-sm'>{description}</p>
                 <div className="card-actions">
-                    <CommonButton>By Now</CommonButton>
+                <button onClick={() =>navigateByNow(_id)} class="btn btn-success">By Now</button>
                 </div>
             </div>
         </div>
