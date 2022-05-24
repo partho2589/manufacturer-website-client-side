@@ -1,4 +1,5 @@
 import React from 'react'
+import CommonButton from '../Shared/CommonButton';
 const Product = ({ product }) => {
     const {name,img, price,availableQuantity,minimumOrderQuantity,description} = product;
     return (
@@ -13,7 +14,7 @@ const Product = ({ product }) => {
                 <p><span>Minimum Order Quantity: {minimumOrderQuantity}</span></p>
                 <p>{description}</p>
                 <div className="card-actions">
-                    <button className="btn btn-primary">Buy Now</button>
+                    <CommonButton>By Now</CommonButton>
                 </div>
             </div>
         </div>
