@@ -1,5 +1,5 @@
 import React from 'react';
-import partho from '../../../images/partho.jpg'
+import partho from '../../images/partho.jpg'
 const MyPortfolio = () => {
     return (
         <div className="card lg:max-w-lg bg-base-100 shadow-xl">

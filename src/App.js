@@ -13,7 +13,7 @@ import Dashboard from './Pages/Dashboard/Dashboard';
 import MyOrders from './Pages/Dashboard/MyOrders';
 import AddAReview from './Pages/Dashboard/AddAReview';
 import MyProfile from './Pages/Dashboard/MyProfile';
-import MyPortfolio from './Pages/Home/MyPortfolio/MyPortfolio';
+import MyPortfolio from './Pages/MyPortfolio/MyPortfolio';
 
 function App() {
   return (
