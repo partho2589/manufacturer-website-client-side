@@ -13,6 +13,7 @@ const Home = () => {
             <BusinessSummary></BusinessSummary>
             <Reviews></Reviews>
             <Footer></Footer>
+            
         </div>
     );
 };

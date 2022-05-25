@@ -1,6 +1,5 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import About from './Pages/About/About';
 import Blog from './Pages/Blog';
 import Home from './Pages/Home/Home';
 import Navbar from './Pages/Home/Navbar';
@@ -14,6 +13,7 @@ import Dashboard from './Pages/Dashboard/Dashboard';
 import MyOrders from './Pages/Dashboard/MyOrders';
 import AddAReview from './Pages/Dashboard/AddAReview';
 import MyProfile from './Pages/Dashboard/MyProfile';
+import MyPortfolio from './Pages/Home/MyPortfolio/MyPortfolio';
 
 function App() {
   return (
@@ -21,7 +21,8 @@ function App() {
       <Navbar></Navbar>
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
-        <Route path='/about' element={<About></About>}></Route>
+        <Route path='/home' element={<Home></Home>}></Route>
+        <Route path='/myPortfolio' element={<MyPortfolio></MyPortfolio>}></Route>
         <Route path='/purchase/:purchaseID' element={
           <RequireAuth>
             <Purchase></Purchase>

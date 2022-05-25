@@ -1,6 +1,6 @@
 import React from 'react';
-import partho from '../../images/partho.jpg'
-const About = () => {
+import partho from '../../../images/partho.jpg'
+const MyPortfolio = () => {
     return (
         <div className="card lg:max-w-lg bg-base-100 shadow-xl">
             <figure className="px-10 pt-10">
@@ -12,6 +12,7 @@ const About = () => {
                 <a href="http://localhost:3000/">link</a>
             </div>
         </div>)
+    
 };
 
-export default About;
+export default MyPortfolio;

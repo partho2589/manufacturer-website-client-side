@@ -10,7 +10,7 @@ const Products = () => {
     },[])
     return (
         <div>
-            <h1 className='text-2xl text-center font-bold text-primary'>Tools</h1>
+            <h1 className='text-2xl text-center font-bold text-primary mt-5'>Tools</h1>
             <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10'>
                 {
                     product.map(product=><Product

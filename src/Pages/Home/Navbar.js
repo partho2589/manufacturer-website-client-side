@@ -11,9 +11,10 @@ const Navbar = () => {
         signOut(auth);
     };
     const menuItem = <>
-
-        <li> <Link to='/about'>About</Link></li>
+    <li> <Link to='/home'>Home</Link></li>
+        <li> <Link to='/myPortfolio'>MyPortfolio</Link></li>
         <li> <Link to='/blog'>Blog</Link></li>
+        
         {
             user && <li> <Link to='/dashboard'>Dashboard</Link></li>
         }
@@ -31,7 +32,7 @@ const Navbar = () => {
                         {menuItem}
                     </ul>
                 </div>
-                <Link to='/'>Home</Link>
+                <Link to='/'>Computer</Link>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal p-0">
