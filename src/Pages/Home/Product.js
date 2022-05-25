@@ -4,7 +4,7 @@ const Product = ({ product }) => {
     const { _id, name,img, price,availableQuantity,minimumOrderQuantity,description} = product;
     const navigate = useNavigate()
     const navigateByNow = (_id) => {
-        navigate(`product/${_id}`)
+        navigate(`purchase/${_id}`)
     }
     return (
         <div className="card lg:max-w-lg bg-base-100 shadow-xl">
