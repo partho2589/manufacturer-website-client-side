@@ -33,7 +33,7 @@ function App() {
           </RequireAuth>
           
         }>
-          <Route index element={<MyOrders></MyOrders>}></Route>
+          <Route path='myOrders' element={<MyOrders></MyOrders>}></Route>
           <Route path='add' element={<AddAReview></AddAReview>}></Route>
           <Route path='profile' element={<MyProfile></MyProfile>}></Route>
         </Route>
