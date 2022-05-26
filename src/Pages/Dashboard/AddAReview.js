@@ -16,9 +16,7 @@ const AddAReview = () => {
             .then(res => res.json())
             .then(result => {
                 console.log(result)
-            })
-
-        console.log(data)
+            });
     };
     return (
         <div className='text-center w-50'>

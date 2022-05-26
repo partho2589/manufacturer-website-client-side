@@ -4,6 +4,7 @@ const Product = ({ product }) => {
     const { _id, name,img, price,availableQuantity,minimumOrderQuantity,description} = product;
     const navigate = useNavigate()
     const navigateByNow = (_id) => {
+        
         navigate(`purchase/${_id}`)
     }
     return (
