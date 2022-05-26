@@ -14,13 +14,12 @@ const Purchase = () => {
             .then(data => setProduct(data))
     }, [])
     const { name, img, price, availableQuantity, minimumOrderQuantity, description } = product;
-  
+    const handleBooking = () => {
+
+    };
+
     return (
         <div>
-            <div className='mt-5'>
-                <h4 className='text-2xl text-center'>User Name: {user.displayName}</h4>
-                <h4 className='text-2xl text-center'>User Email: {user.email}</h4>
-            </div>
             <div className='flex justify-center '>
                 <div className="card  lg:max-w-lg bg-base-100 shadow-xl ">
                     <figure className="px-10 pt-10">
@@ -32,19 +31,19 @@ const Purchase = () => {
                         <p><span>Available Quantity: {availableQuantity}</span></p>
                         <p><span>Minimum Order Quantity: {minimumOrderQuantity}</span></p>
                         <p className='text-sm'>{description}</p>
-        
                     </div>
                 </div>
 
             </div>
-            <div className='flex justify-center mt-5 mb-7'>
-                <div class="form-control w-full max-w-xs flex justify-center">
-                    <label class="label ">
-                        <span class="label-text text-2xl text-primary">Product Quantity</span>
-                    </label>
-                    <input type="number" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
-                </div>
-            </div>
+
+            <form onSubmit={handleBooking} className='grid grid-cols-1 gap-3 justify-items-center mt-2'>
+
+                <input type="text" name="name" disabled value={user?.displayName || ''} className="input input-bordered w-full max-w-xs" />
+                <input type="email" name="email" disabled value={user?.email || ''} className="input input-bordered w-full max-w-xs" />
+                <input type="text" name="phone" placeholder="Phone Number" className="input input-bordered w-full max-w-xs" />
+                <input type="number" name="quantity" placeholder="Order Quantity" className="input input-bordered w-full max-w-xs" />
+                <input type="submit" value="Submit" className="btn btn-secondary w-full max-w-xs" />
+            </form>
         </div>
     );
 };

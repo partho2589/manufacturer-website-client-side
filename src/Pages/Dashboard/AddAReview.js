@@ -20,13 +20,16 @@ const AddAReview = () => {
     };
     return (
         <div className='text-center w-50'>
-            <h1 className='text-center'>Add Iter </h1>
+            <h1 className='text-center'>Add A Review </h1>
             <form className='flex flex-col' onSubmit={handleSubmit(onSubmit)}>
                 <input className='mb-3' placeholder='Name'{...register("name", { required: true, })} />
                 <textarea className='mb-3' placeholder='Add A Review' {...register("review")} />
                 <input className='mb-3' placeholder='Location ' type="text" {...register("location")} />
                 <input className='mb-3' placeholder=' Photo URL' type="text" {...register("img")} />
-                <input className='bg-primary' value='Add Item' type="submit" />
+                <input className='mb-3' placeholder='Rating' type="number" {...register("rating")} />
+                
+                <input className='bg-primary' value='Add A Review' type="submit" />
+
             </form>
         </div>
     );
