@@ -1,20 +1,21 @@
 import React, { useEffect, useState } from 'react';
+import UserRow from './UserRow';
 
 const AllUser = () => {
-    const [user, setUser] = useState([])
+    const [users, setUsers] = useState([])
     useEffect(() => {
         fetch('http://localhost:5000/user')
             .then(res => res.json())
             .then(data => {
-                setUser(data)
+                setUsers(data)
             })
     }, [])
 
     return (
         <div>
             <h1 className='text-2xl text-center text-primary mt-5 font-bold'>All Users</h1>
-            <div class="overflow-x-auto">
-                <table class="table w-full">
+            <div className="overflow-x-auto">
+                <table className="table w-full">
                     <thead>
                         <tr>
                             <th></th>
@@ -24,16 +25,12 @@ const AllUser = () => {
                         </tr>
                     </thead>
                     <tbody>
-                        {
-                            user.map((u, index) => <tr
-                                key={u._id}
-                            >
-                                <th>{index + 1}</th>
-                                <td>{u.email}</td>
-                                <td><button class="btn btn-xs ">Make Admin</button></td>
-                                <td><button class="btn btn-xs ">Delete User</button></td>
-                            </tr>)
-                        }
+                    {
+                           users.map(user=><UserRow
+                           key={user._id}
+                           user={user}
+                           ></UserRow>)
+                       }
                     </tbody>
                 </table>
             </div>
