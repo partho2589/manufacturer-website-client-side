@@ -7,7 +7,7 @@ const MyOrders = () => {
     const [user] = useAuthState(auth);
     useEffect(() => {
         if (user) {
-            fetch(`http://localhost:5000/order?customerEmail=${user.email}`)
+            fetch(`https://desolate-ridge-76720.herokuapp.com/order?customerEmail=${user.email}`)
                 .then(res => res.json())
                 .then(data => setOrder(data))
         }
