@@ -16,7 +16,7 @@ const MyProfile = () => {
                 <input className='mb-3' placeholder='Location ' type="text" {...register("location")} />
                 <input className='mb-3' placeholder=' Phone number' type="number" {...register(" phoneNumber")} />
 
-                <input className='bg-primary' value='upDate' type="" />
+                <input className='bg-primary text-center font-bold' value='UpDate' type="" />
 
             </form>
         </div>

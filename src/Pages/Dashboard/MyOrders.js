@@ -5,7 +5,6 @@ import auth from '../../firebase.init';
 const MyOrders = () => {
     const [order, setOrder] = useState([]);
     const [user] = useAuthState(auth);
-    console.log(user)
     useEffect(() => {
         if (user) {
             fetch(`http://localhost:5000/order?customerEmail=${user.email}`)
@@ -13,16 +12,15 @@ const MyOrders = () => {
                 .then(data => setOrder(data))
         }
     }, [user])
-    console.log(order)
     return (
 
         <div>
-            <h1>order:{order.length}</h1>
-            <div class="overflow-x-auto">
-                <table class="table w-full">
+            <h1 className='text-xl text-success mt-5'> My Order:{order.length}</h1>
+            <div className="overflow-x-auto">
+                <table className="table w-full">
                     <thead>
                         <tr>
-                            <th></th>
+                            <th>S.I</th>
                             <th>Name</th>
                             <th>Product Name</th>
                             <th>Price</th>
@@ -31,34 +29,18 @@ const MyOrders = () => {
                     </thead>
                     <tbody>
                         {
-                            order.map(o =>
+                            order.map((o, index) =>
                                 <tr
                                 key={o._id}
                                 >
-                                    <th>1</th>
+                                    <th>{index + 1}</th>
                                     <td>{user.displayName}</td>
-                                    <td>Quality Control Specialist</td>
-                                    <td>Blue</td>
+                                    <td>{o.pName}</td>
+                                    <td>{o.pPrice}</td>
+                                    <td>{o.quantity}</td>
                                 </tr>)
                         }
-                        <tr>
-                            <th>1</th>
-                            <td>Cy Ganderton</td>
-                            <td>Quality Control Specialist</td>
-                            <td>Blue</td>
-                        </tr>
-                        <tr>
-                            <th>2</th>
-                            <td>Hart Hagerty</td>
-                            <td>Desktop Support Technician</td>
-                            <td>Purple</td>
-                        </tr>
-                        <tr>
-                            <th>3</th>
-                            <td>Brice Swyre</td>
-                            <td>Tax Accountant</td>
-                            <td>Red</td>
-                        </tr>
+                        
                     </tbody>
                 </table>
             </div>

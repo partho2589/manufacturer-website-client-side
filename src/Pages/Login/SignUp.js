@@ -29,12 +29,12 @@ const SignUp = () => {
 
     if (user || gUser) {
         console.log(user || gUser);
+        // navigate('/');
     }
 
     const onSubmit = async data => {
         await createUserWithEmailAndPassword(data.email, data.password);
-       
-        navigate('/');
+        
     }
     return (
         <div className='flex mt-5 justify-center items-center'>
