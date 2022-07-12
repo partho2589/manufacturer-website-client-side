@@ -20,7 +20,7 @@ const MyPortfolio = () => {
                 <div class=" bg-base-100 shadow-xl">
                     <div class="card-body">
                         <h2 class="card-title">These are the technologies I know as a web developer.</h2>
-                        <p>HTML</p>
+                        {/* <p>HTML</p>
                         <p>CSS</p>
                         <p>JAVA Script </p>
                         <p>Node js</p>
@@ -28,7 +28,7 @@ const MyPortfolio = () => {
                         <p>Firebase</p>
                         <p>React</p>
                         <p>Tailwind css</p>
-                        <p>Bootstrap</p>
+                        <p>Bootstrap</p> */}
                         
                     </div>
                 </div>
