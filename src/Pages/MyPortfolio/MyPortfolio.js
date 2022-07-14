@@ -8,7 +8,7 @@ const MyPortfolio = () => {
                     <img src={partho} alt="Shoes" className="rounded-xl" />
                 </figure>
 
-                <div className="card-body items-start text-left">
+                {/* <div className="card-body items-start text-left">
                     <h2 className="card-title text-xl">Partho malo</h2>
                     <p>Email: parthomalo615@gmail.com</p>
                     <h4>I am passing HSC in 2021 from Madaripur Technical School and College</h4>
@@ -16,11 +16,11 @@ const MyPortfolio = () => {
                     <a className='text-sm text-blue-600' href="https://pure-fruits-werehouse.web.app/">1. Pure-Fruits-Warehouse</a>
                     <a className='text-sm text-blue-600' href="https://route-firebase-assignment-10.web.app/">2. Home and Gym Workout Trainer</a>
                     <a className='text-sm text-blue-600' href="https://luxury-monstera-19ba33.netlify.app/home">3. Lenovo Laptop Sell Website</a>
-                </div>
+                </div> */}
                 <div class=" bg-base-100 shadow-xl">
                     <div class="card-body">
                         <h2 class="card-title">These are the technologies I know as a web developer.</h2>
-                        {/* <p>HTML</p>
+                        <p>HTML</p>
                         <p>CSS</p>
                         <p>JAVA Script </p>
                         <p>Node js</p>
@@ -28,7 +28,7 @@ const MyPortfolio = () => {
                         <p>Firebase</p>
                         <p>React</p>
                         <p>Tailwind css</p>
-                        <p>Bootstrap</p> */}
+                        <p>Bootstrap</p>
                         
                     </div>
                 </div>
